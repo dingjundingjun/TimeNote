@@ -1,0 +1,11 @@
+*.pyc
+ic_launcher-web.png
+proguard-project.txt
+lint.xml
+*~
+*.o
+*.cmd
+bin/*
+obj/*
+gen/*
+libs/*
