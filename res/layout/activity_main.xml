@@ -7,9 +7,36 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".TimeNoteActivity" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:id="@+id/top_info"
+        >
+        <Button 
+            android:id="@+id/lastmonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:text="@string/last_month"
+            />
+        <TextView 
+            android:id="@+id/calendar_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button 
+            android:id="@+id/nextmonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_month"
+            />
+    </LinearLayout>
     <GridView 
+        android:layout_below="@id/top_info"
         android:id="@+id/calendar_gridview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:numColumns="7"
         />
 </RelativeLayout>
